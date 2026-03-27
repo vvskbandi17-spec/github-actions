@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello Step
-        run: eco "Welcome to GitHub Actions Pipelines"
+        run: echo "Welcome to GitHub Actions Pipelines"
   
