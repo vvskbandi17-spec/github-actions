@@ -1,5 +1,5 @@
 name: Hello world
-on: workflow_dispatch
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -7,16 +7,5 @@ jobs:
       - name: Build Step
         run: echo "Running a build Step"
 
-  test:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-     - name: Test Step
-       run: echo "Running Test step"
-  deploy:
-    runs-on: ubuntu-latest
-    needs: test
-    steps:
-      - name: Deploy Step
-        run: echo "Running Deployment Step"
+ 
   
