@@ -1,0 +1,9 @@
+name: Hello world
+on: workflow_dispatch
+jobs:
+  TestWorld:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello Step
+        run: eco "Welcome to GitHub Actions Pipelines"
+  
